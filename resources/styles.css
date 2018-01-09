@@ -1,0 +1,61 @@
+body{
+  font-family: 'Ubuntu', 'Arial', sans-serif;
+}
+
+#container{
+  position: relative;
+  margin: 0 auto;
+  width: 804px;
+}
+
+#bar{
+  display: block;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+#graphicArea{
+  z-index: 1;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: -44px;
+}
+
+#exp{
+  text-align: center;
+  font-size: 36px;
+}
+
+.number-input{
+  z-index: 2;
+  position: absolute;
+  width: 24px;
+  text-align: center;
+  font-size: 24px;
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.caption{
+  z-index: 2;
+  position: absolute;
+  width: 32px;
+  text-align: center;
+  font-size: 24px;
+  color: #000000;
+}
+
+.wrong-input{
+  color: #FF0000;
+}
+
+.wrong-exp{
+  background-color: #FFFF00;
+}
+
+#sum-input{
+  width: 48px;
+  display: none;
+  font-size: 32px;
+}
