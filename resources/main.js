@@ -20,7 +20,6 @@ var endPoint = midPoint + secondArcRadius * 2;
 var secondArcCenter = midPoint + secondArcRadius;
 var arcHeightA = 155 - halfSegment * a * 0.5;
 var arcHeightB = 155 - halfSegment * b * 0.5;
-console.log(arcHeightA);
 
 //main code
 drawArc(0,midPoint,firstArcCenter,200,a); //draw first arc
@@ -28,7 +27,7 @@ createInput("a-input",firstArcCenter - 12,arcHeightA,1); //create a input
 var aInput = document.getElementById("a-input");
 aInput.oninput = function(){
   if (aInput.value != a){ //check equality
-    markWrong(aInput,"a"); //and mark as wrong is not equal
+    markWrong(aInput,"a"); //and mark as wrong if not equal
   }
   else{
     unmarkRight(aInput,"a","a-caption",firstArcCenter - 12,arcHeightA - 20,a); //or unmark and transform to caption
@@ -82,7 +81,7 @@ function createInput(id,x,y,length){
   input.setAttribute("maxlength", length);
   input.setAttribute("id", id);
   input.classList.add('number-input');
-  container.append(input);
+  container.appendChild(input);
   input.style.left = x + 'px';
   input.style.top = y + 'px';
 }
@@ -103,7 +102,7 @@ function unmarkRight(input,exp_element,id,x,y,num){
   capt.classList.add("caption");
   capt.setAttribute("id", id);
   capt.appendChild(t);
-  container.append(capt);
+  container.appendChild(capt);
   capt.style.left = x + 'px';
   capt.style.top = y + 'px';
 }
